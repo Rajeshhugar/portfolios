@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>About Me</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">About ME</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							
+							<li class="active"><a href="generic.html">About Me </a></li>
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="elements.html">Curriculam Vitae</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://twitter.com/hugarrajesh_" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/rajesh.hugar.3" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/rajesh__hugar/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/Rajeshhugar" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+									<h1>Hi I am <br/>Rajesh Hugar<br />
+									</h1>
+									<h4>A Civil Engineer turned ML Engineer <br />
+										<br/>
+									Currently working In Text Analytics and Text Mining <br />
+									<br/>
+									And Exploring Deep earning 
+									<br/>
+									</h4>
+								</header>
+								<style>
+								/* added a container around the image and content */
+								.container {
+									display: flex;
+									flex-direction: row;
+								}
+							
+								/* set a width for the image container */
+								.image-container {
+									width: 50%;
+								}
+							
+								/* set a margin for the image */
+								img {
+									float:left;
+									margin-right: 500px;
+									max-width: 100%;
+									height: auto;
+									width: 150%;
+								}
+								p{
+									text-align:justify;
+									font-size: 18px;
+									line-height: 1.5;
+								}
+								</style>
+								<div class="container">
+								<!-- added a container for the image -->
+								<div class="image-container">
+									<img src="images/rajesh.jpg" alt="Nature"/>
+								</div>
+								<div class="text-container">
+								
+								<p>I'm a passionate Machine Learning Engineer with over 3 years of experience in developing and implementing intelligent systems that can learn and adapt to new situations. </p>
+
+								<p> I completed my graduation in Civil Engineering from Pune University in 2016, but I quickly realized my passion for data science and artificial intelligence. Since then, I've been on a journey to leverage my engineering background and combine it with my expertise in machine learning to create innovative solutions that can make a real impact on people's lives.
+								</p>
+								<p> My experience spans a range of industries, including finance,retail and Social Media Analytics. I've worked on projects such as developing predictive maintenance algorithms for cross Sell Prediction, building fraud detection models for financial institutions, and Root cause analytics
+								</p>
+								<p>My skills include data analysis, algorithm development, model selection and optimization, and deployment of machine learning models in production. I'm always up-to-date with the latest research and techniques in machine learning, and I enjoy learning and growing in my field.  </p>
+								<p> I'm a strong believer in collaboration, and I enjoy working with diverse teams to bring new ideas to life. I'm committed to delivering high-quality work that meets or exceeds expectations, and I'm always looking for new challenges and opportunities to push the boundaries of what's possible.
+								</p>
+								<p>If you're looking for a Machine Learning Engineer who is passionate, skilled, and dedicated to delivering results, then you've come to the right place. Let's work together to build intelligent systems that can drive innovation and make a positive impact on the world.  </p>
+								<p>  </p>
+								
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="POST" action="https://formspree.io/f/xbjewroq" accept-charset="UTF-8" onsubmit="event.preventDefault(); sendMessage();">
+							<div class="fields">
+							<div class="field">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" required/>
+							</div>
+							<div class="field">
+								<label for="email">Email</label>
+								<input type="email" name="_replyto" id="email" required/>
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="3" required></textarea>
+							</div>
+							</div>
+							<input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
+							<input type="hidden" name="_language" value="en" />
+							<input type="text" name="_gotcha" style="display:none" />
+							<ul class="actions">
+							<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
+						<div id="success-msg" style="display:none">Message sent successfully!</div>
+						<script>
+							function sendMessage() {
+							const xhr = new XMLHttpRequest();
+							xhr.open("POST", "https://formspree.io/f/xbjewroq", true);
+							xhr.setRequestHeader("Accept", "application/json");
+							xhr.setRequestHeader("Content-Type", "application/json");
+							xhr.onreadystatechange = function() {
+								if (xhr.readyState !== XMLHttpRequest.DONE) return;
+								if (xhr.status === 200) {
+								document.getElementById("success-msg").style.display = "block";
+								document.querySelector("form").reset();
+								} else {
+								alert("There was an error. Please try again.");
+								}
+							};
+							xhr.send(JSON.stringify({
+								name: document.getElementById("name").value,
+								_replyto: document.getElementById("email").value,
+								message: document.getElementById("message").value
+							}));
+							}
+						</script>
+						</section>
+						
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>13,Tadiwala Road Near Tadiwala Road Police Station,Pune
+								Maharashtra, India.<a>
+									Pincode-411001</a>
+								</p>
+						</section>
+								<section>
+								<h3>Phone</h3>
+								<p><a href="#">(+91)7020985029</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">rajeshhugar94@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://twitter.com/hugarrajesh_" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/rajesh.hugar.3" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/rajesh__hugar/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/Rajeshhugar" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

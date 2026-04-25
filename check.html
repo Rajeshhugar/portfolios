@@ -1,0 +1,47 @@
+<section>
+    <form method="POST" action="https://formspree.io/f/xbjewroq" accept-charset="UTF-8" onsubmit="event.preventDefault(); sendMessage();">
+    <div class="fields">
+    <div class="field">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required/>
+    </div>
+    <div class="field">
+        <label for="email">Email</label>
+        <input type="email" name="_replyto" id="email" required/>
+    </div>
+    <div class="field">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="3" required></textarea>
+    </div>
+    </div>
+    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
+    <input type="hidden" name="_language" value="en" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <ul class="actions">
+    <li><input type="submit" value="Send Message" /></li>
+    </ul>
+</form>
+<div id="success-msg" style="display:none">Message sent successfully!</div>
+<script>
+    function sendMessage() {
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://formspree.io/f/xbjewroq", true);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+        document.getElementById("success-msg").style.display = "block";
+        document.querySelector("form").reset();
+        } else {
+        alert("There was an error. Please try again.");
+        }
+    };
+    xhr.send(JSON.stringify({
+        name: document.getElementById("name").value,
+        _replyto: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    }));
+    }
+</script>
+</section>
